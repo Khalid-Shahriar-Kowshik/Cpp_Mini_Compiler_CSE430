@@ -1,0 +1,14 @@
+C-like Parser Started
+Parsing Declaration/Function
+Parsing Block
+Parsing Declaration/Function
+Parsing Block
+Parsing Declaration/Function
+Parsing Declaration/Function
+Parsing If Statement
+Parsing Block
+Parsing cout statement
+Parsing Block
+Parsing cout statement
+Parsing cout statement
+C-like Parser Completed

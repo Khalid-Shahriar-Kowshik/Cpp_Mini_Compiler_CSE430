@@ -1,0 +1,19 @@
+ADD t0, a, b
+RET t0
+LOAD R1, 5
+STORE arr[1], R1
+PUSH 1
+PUSH 2
+CALL add
+LOAD R1, t1
+STORE z, R1
+CMP_OP > z, 2 -> t2
+CMP t2, 0
+JEQ L0
+OUT z
+JMP L1
+L0:
+OUT 0
+L1:
+OUT arr[1]
+RET 0

@@ -1,0 +1,6 @@
+Semantic Analysis Started
+Declared function 'add'
+Declared function 'main'
+Declared variable 'arr' of type int[3]
+Declared variable 'z' of type int
+No semantic errors found

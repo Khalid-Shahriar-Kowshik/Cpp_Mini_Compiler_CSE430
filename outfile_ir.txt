@@ -1,0 +1,16 @@
+t0 = a + b
+RETURN t0
+arr[1] = 5
+PARAM 1
+PARAM 2
+t1 = CALL add, 2
+z = t1
+t2 = z > 2
+IF_FALSE t2 GOTO L0
+PRINT z
+GOTO L1
+L0:
+PRINT 0
+L1:
+PRINT arr[1]
+RETURN 0

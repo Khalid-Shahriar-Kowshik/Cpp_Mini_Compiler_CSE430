@@ -1,0 +1,30 @@
+=== Test 1: original sample ===
+int add(int a, int b) { return a + b; }
+int main() {
+  int arr[3];
+  arr[1] = 5;
+  int z;
+  z = add(1, 2);
+  if (z > 2) { cout << z; } else { cout << 0; }
+  cout << arr[1];
+  return 0;
+}
+
+=== Test 2: call result assignment ===
+int mul(int x, int y) { int t; t = x * y; return t; }
+int main() {
+  int result;
+  result = mul(3, 4);
+  cout << result;
+  return 0;
+}
+
+=== Test 3: arrays and locals ===
+int main() {
+  int numbers[2];
+  numbers[0] = 10;
+  int v;
+  v = 20;
+  cout << v;
+  return 0;
+}
