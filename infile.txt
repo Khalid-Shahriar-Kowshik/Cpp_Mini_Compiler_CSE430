@@ -1,10 +1,25 @@
-int add(int a, int b) { return a + b; }
 int main() {
-  int arr[3];
-  arr[1] = 5;
+  int a;
+  int b;
+  int c;
+  int x;
+  int y;
   int z;
-  z = add(1, 2);
-  if (z > 2) { cout << z; } else { cout << 0; }
-  cout << arr[1];
+  int u;
+  int v;
+  int w;
+  int k;
+
+  a = 2 + 3;
+  b = a + 0;
+  c = 0 + b;
+  x = b - 0;
+  y = c * 1;
+  z = 1 * y;
+  u = y * 0;
+  v = 0 * y;
+  w = y / 1;
+  k = 10 / 2;
+  2 + 3;
   return 0;
 }

@@ -1,4 +1,5 @@
 #include "mini_compiler_common.h"
+#include "iroptimizer.h"
 
 #include <algorithm>
 #include <map>
@@ -1228,6 +1229,14 @@ int main() {
     std::cout << "========== INTERMEDIATE CODE ==========" << "\n";
     mc::writeLines(mc::kOutIr, ir.ir());
 
+    std::cout << "========== IR OPTIMIZATION ==========" << "\n";
+    IROptimizer optimizer;
+    vector<string> optimizationReport;
+    vector<string> optimizedIr = optimizer.optimize(ir.ir(), optimizationReport);
+    mc::writeLines(mc::kOutIrUnoptimized, ir.ir());
+    mc::writeLines(mc::kOutIrOptimized, optimizedIr);
+    mc::writeLines(mc::kOutOptimizationReport, optimizationReport);
+
     std::cout << "========== MACHINE CODE ==========" << "\n";
     mc::writeLines(mc::kOutMachine, mach.code());
 
@@ -1239,6 +1248,9 @@ int main() {
               << mc::kOutParser << ", "
               << mc::kOutSemantic << ", "
               << mc::kOutIr << ", "
+              << mc::kOutIrUnoptimized << ", "
+              << mc::kOutIrOptimized << ", "
+              << mc::kOutOptimizationReport << ", "
               << mc::kOutMachine << ", "
               << mc::kOutErrors << "\n";
 

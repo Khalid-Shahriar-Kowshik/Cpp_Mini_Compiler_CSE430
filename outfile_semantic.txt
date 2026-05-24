@@ -1,6 +1,13 @@
 Semantic Analysis Started
-Declared function 'add'
 Declared function 'main'
-Declared variable 'arr' of type int[3]
+Declared variable 'a' of type int
+Declared variable 'b' of type int
+Declared variable 'c' of type int
+Declared variable 'x' of type int
+Declared variable 'y' of type int
 Declared variable 'z' of type int
+Declared variable 'u' of type int
+Declared variable 'v' of type int
+Declared variable 'w' of type int
+Declared variable 'k' of type int
 No semantic errors found

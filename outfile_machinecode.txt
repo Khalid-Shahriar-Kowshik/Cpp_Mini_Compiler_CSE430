@@ -1,19 +1,32 @@
-ADD t0, a, b
-RET t0
-LOAD R1, 5
-STORE arr[1], R1
-PUSH 1
-PUSH 2
-CALL add
+ADD t0, 2, 3
+LOAD R1, t0
+STORE a, R1
+ADD t1, a, 0
 LOAD R1, t1
+STORE b, R1
+ADD t2, 0, b
+LOAD R1, t2
+STORE c, R1
+SUB t3, b, 0
+LOAD R1, t3
+STORE x, R1
+MUL t4, c, 1
+LOAD R1, t4
+STORE y, R1
+MUL t5, 1, y
+LOAD R1, t5
 STORE z, R1
-CMP_OP > z, 2 -> t2
-CMP t2, 0
-JEQ L0
-OUT z
-JMP L1
-L0:
-OUT 0
-L1:
-OUT arr[1]
+MUL t6, y, 0
+LOAD R1, t6
+STORE u, R1
+MUL t7, 0, y
+LOAD R1, t7
+STORE v, R1
+DIV t8, y, 1
+LOAD R1, t8
+STORE w, R1
+DIV t9, 10, 2
+LOAD R1, t9
+STORE k, R1
+ADD t10, 2, 3
 RET 0

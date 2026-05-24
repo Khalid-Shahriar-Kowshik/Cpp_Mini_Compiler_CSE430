@@ -1,8 +1,13 @@
 NAME          KIND          TYPE              SCOPE             EXTRA INFO
-add           Function      int (int,int)     Global            Defined, 2 parameters
 cout          Variable/obj  ostream           Global (library)  From <iostream>
 main          Function      int ()            Global            Program entry point
-a             Parameter     int               Local to add      Passed by value
-b             Parameter     int               Local to add      Passed by value
-arr           Variable      int               Local to main     Array of 3 integers
-z             Variable      int               Local to main     Used to store result of add
+a             Variable      int               Local to main     
+b             Variable      int               Local to main     
+c             Variable      int               Local to main     
+k             Variable      int               Local to main     
+u             Variable      int               Local to main     
+v             Variable      int               Local to main     
+w             Variable      int               Local to main     
+x             Variable      int               Local to main     
+y             Variable      int               Local to main     
+z             Variable      int               Local to main     

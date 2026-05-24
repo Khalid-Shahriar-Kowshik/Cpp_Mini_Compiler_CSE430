@@ -1,0 +1,40 @@
+Constant folding: t0 = 2 + 3 -> t0 = 5
+Algebraic simplification: t1 = a + 0 -> t1 = a
+Algebraic simplification: t2 = 0 + b -> t2 = b
+Algebraic simplification: t3 = b - 0 -> t3 = b
+Algebraic simplification: t4 = c * 1 -> t4 = c
+Algebraic simplification: t5 = 1 * y -> t5 = y
+Algebraic simplification: t6 = y * 0 -> t6 = 0
+Algebraic simplification: t7 = 0 * y -> t7 = 0
+Algebraic simplification: t8 = y / 1 -> t8 = y
+Constant folding: t9 = 10 / 2 -> t9 = 5
+Constant folding: t10 = 2 + 3 -> t10 = 5
+Copy propagation: a = t0 -> a = 5
+Copy propagation: b = t1 -> b = a
+Copy propagation: c = t2 -> c = b
+Copy propagation: x = t3 -> x = b
+Copy propagation: y = t4 -> y = c
+Copy propagation: z = t5 -> z = y
+Copy propagation: u = t6 -> u = 0
+Copy propagation: v = t7 -> v = 0
+Copy propagation: w = t8 -> w = y
+Copy propagation: k = t9 -> k = 5
+Dead temporary removed: t0 = 5
+Dead temporary removed: t1 = a
+Dead temporary removed: t2 = b
+Dead temporary removed: t3 = b
+Dead temporary removed: t4 = c
+Dead temporary removed: t5 = y
+Dead temporary removed: t6 = 0
+Dead temporary removed: t7 = 0
+Dead temporary removed: t8 = y
+Dead temporary removed: t9 = 5
+Dead temporary removed: t10 = 5
+Summary:
+Total IR instructions before optimization: 22
+Total IR instructions after optimization: 11
+Total optimizations applied: 32
+Constant folding count: 3
+Algebraic simplification count: 8
+Copy propagation count: 10
+Dead temporary removal count: 11

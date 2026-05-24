@@ -1,0 +1,11 @@
+a = 5
+b = a
+c = b
+x = b
+y = c
+z = y
+u = 0
+v = 0
+w = y
+k = 5
+RETURN 0

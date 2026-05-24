@@ -25,6 +25,9 @@ inline constexpr const char* kOutSymbolTable = "outfile_symboltable.txt";
 inline constexpr const char* kOutParser = "outfile_parser.txt";
 inline constexpr const char* kOutSemantic = "outfile_semantic.txt";
 inline constexpr const char* kOutIr = "outfile_ir.txt";
+inline constexpr const char* kOutIrUnoptimized = "outfile_ir_unoptimized.txt";
+inline constexpr const char* kOutIrOptimized = "outfile_ir_optimized.txt";
+inline constexpr const char* kOutOptimizationReport = "outfile_optimization_report.txt";
 inline constexpr const char* kOutMachine = "outfile_machinecode.txt";
 inline constexpr const char* kOutErrors = "outfile_errors.txt";
 
